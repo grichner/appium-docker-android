@@ -42,6 +42,7 @@ WORKDIR /root
 #   Infrastructure management (client-side)
 #==================
 RUN apt-get -qqy update && \
+    apt-get -y upgrade && \
     apt-get -qqy --no-install-recommends install \
     openjdk-8-jdk \
     ca-certificates \
